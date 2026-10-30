@@ -1,0 +1,113 @@
+{
+  "schemaVersion": 1,
+  "name": "千岁 (QianSui)",
+  "author": "原作者见 QianSui1 随附的《用前必看！！！.txt》（B站个人作品，MIT 协议），本主题仅为格式转换",
+  "version": "0.1.0",
+  "description": "个人本地使用。千岁桌宠 PNG 帧序列转换为 clawd-on-desk 主题，素材版权归原作者。",
+  "preview": "idle.webp",
+  "viewBox": {
+    "x": 0,
+    "y": 0,
+    "width": 432,
+    "height": 578
+  },
+  "layout": {
+    "contentBox": {
+      "x": 48,
+      "y": 58,
+      "width": 336,
+      "height": 462
+    },
+    "centerX": 216,
+    "baselineY": 520,
+    "visibleHeightRatio": 0.78,
+    "baselineBottomRatio": 0.05
+  },
+  "eyeTracking": {
+    "enabled": false,
+    "states": []
+  },
+  "states": {
+    "idle": [
+      "idle.webp"
+    ],
+    "thinking": [
+      "thinking.webp"
+    ],
+    "working": [
+      "idle2.webp"
+    ],
+    "attention": [
+      "working.webp"
+    ],
+    "notification": [
+      "notification.webp"
+    ],
+    "error": {
+      "fallbackTo": "notification"
+    },
+    "sweeping": {
+      "fallbackTo": "working"
+    },
+    "carrying": {
+      "fallbackTo": "working"
+    },
+    "sleeping": [
+      "attention.webp"
+    ]
+  },
+  "sleepSequence": {
+    "mode": "direct"
+  },
+  "idleAnimations": [
+    {
+      "file": "idle2.webp",
+      "duration": 3360
+    },
+    {
+      "file": "greeting.webp",
+      "duration": 3290
+    }
+  ],
+  "timings": {
+    "mouseIdleTimeout": 60000,
+    "mouseSleepTimeout": 600000,
+    "minDisplay": {
+      "notification": 13230,
+      "error": 13230,
+      "attention": 5390
+    },
+    "autoReturn": {
+      "notification": 13230,
+      "error": 13230,
+      "attention": 5390
+    }
+  },
+  "hitBoxes": {
+    "default": {
+      "x": 43,
+      "y": 58,
+      "w": 346,
+      "h": 463
+    }
+  },
+  "reactions": {
+    "clickLeft": {
+      "file": "greeting.webp",
+      "duration": 3290
+    },
+    "clickRight": {
+      "file": "greeting.webp",
+      "duration": 3290
+    },
+    "double": {
+      "files": [
+        "attention.webp"
+      ],
+      "duration": 2660
+    }
+  },
+  "miniMode": {
+    "supported": false
+  }
+}

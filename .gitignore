@@ -1,0 +1,12 @@
+# 帆波（一之濑帆波）的图不公开：参考图是别人画的，原画和生成好的主题是同人图
+honami/参考图/
+honami/raw/
+honami-theme/
+honami-preview.png
+honami-*-strip.png
+
+# Codex 运行日志（本机路径、会话输出）
+honami/codex-job/*.log
+
+__pycache__/
+*.pyc

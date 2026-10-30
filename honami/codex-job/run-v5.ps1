@@ -1,0 +1,5 @@
+﻿$OutputEncoding=[Text.Encoding]::UTF8; [Console]::InputEncoding=[Text.Encoding]::UTF8
+$codex = Join-Path (Get-AppxPackage OpenAI.Codex).InstallLocation 'app\resources\codex.exe'
+Get-Content -Raw -Encoding UTF8 'C:\Users\18533\Desktop\桌宠\clawd-themes\honami\codex-job\prompt-v5.txt' | & $codex exec --skip-git-repo-check --sandbox workspace-write -C 'C:\Users\18533\Desktop\桌宠\clawd-themes\honami' --image 'C:\Users\18533\Desktop\桌宠\clawd-themes\honami\raw\sheet-A-v4.png' --image 'C:\Users\18533\Desktop\桌宠\QianSui1\image\待机新\f_0031.png' --image 'C:\Users\18533\Desktop\桌宠\JieDeng\image\待机\f_0031.png' - *> 'C:\Users\18533\Desktop\桌宠\clawd-themes\honami\codex-job\v5.log'
+if (Test-Path 'C:\Users\18533\Desktop\桌宠\clawd-themes\honami\raw\sheet-A-v5.png') { Get-Content -Raw -Encoding UTF8 'C:\Users\18533\Desktop\桌宠\clawd-themes\honami\codex-job\prompt-B-v5.txt' | & $codex exec --skip-git-repo-check --sandbox workspace-write -C 'C:\Users\18533\Desktop\桌宠\clawd-themes\honami' --image 'C:\Users\18533\Desktop\桌宠\clawd-themes\honami\raw\sheet-A-v5.png' - *> 'C:\Users\18533\Desktop\桌宠\clawd-themes\honami\codex-job\B-v5.log' }
+
